@@ -14,7 +14,7 @@
     <h3>Fecha de nacimiento: 18/04/1993</h3>
     <h3>Lugar de nacimiento: Argentina</h3>
     <p> <a href="../index.html">Inicio</a></p>
-    <p> <a href="paginas/experiencia.html">Experiencia</a> </p>
+    <p> <a href="../paginas/experiencia.html">Experiencia</a> </p>
     <h2>Educación</h2>
     <table border="1">
      <thead>
@@ -52,40 +52,46 @@
        </tr>
      </tbody>
     </table>
-<h4>Agregar Estudios</h4>
-<p>Año
-  <select>
-    <option>2018</option>
-    <option>2017</option>
-    <option>2016</option>
-    <option>2015</option>
-    <option>2014</option>
-    <option>2013</option>
-    <option>2012</option>
-    <option>2011</option>
-    <option>2010</option>
-    <option>2009</option>
-    <option>2008</option>
-    <option>2007</option>
-    <option>2006</option>
-    <option>2005</option>
-    <option>2004</option>
-    <option>2003</option>
-    <option>2002</option>
-    <option>2001</option>
-    <option>2000</option>
-</select>
-</p>
-<p>
-  <label for="Institucion">Institución</label>
-  <input type="text" id="institucion">
-</p>
-<p>
-  <label for="titulo">Título</label>
-  <input type="text" id="titulo">
-</p>
-<input type="submit"  value="Enviar">
-</p>
+<form name="agregarestudios" autocomplete="on">
+  <fieldset>
+    <legend>Agregar Estudios</legend>
+    <p>Año
+      <select>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+    </select>
+    </p>
+    <p>
+      <label for="Institucion">Institución</label>
+      <input type="text" id="institucion" required>
+    </p>
+    <p>
+      <label for="lugar">Lugar</label>
+      <br>
+      <textarea name="lugar" rows="8" cols="40"></textarea>
+    </p>
+    <input type="submit"  value="Enviar">
+    </p>
+  </fieldset>
+</form>
+
   </body>
   <p>
     Contacto: <br/>
